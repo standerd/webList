@@ -1,33 +1,141 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 85%;
+  margin: 2rem auto;
+  border: 1px solid rgb(56, 55, 55);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  background-color: rgba(29, 28, 28, 0.6);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(61, 60, 60);
+  border-radius: 0.5rem;
+  width: 90%;
+  margin: 2rem auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.head {
+  background-color: rgb(61, 60, 60);
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.addProjects {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid rgb(61, 59, 59);
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+
+.submitList {
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+  width: 95%;
+}
+
+input {
+  margin-right: 1%;
+  margin-bottom: 1%;
+  padding: 1.3rem;
+  border-radius: 0.1rem;
+  max-width: 25%;
+  font-size: 1rem;
+}
+
+.Submit {
+  width: 8rem;
+  height: 3.8rem;
+  border-radius: 1rem;
+  background-color: rgb(54, 54, 54);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.Submit:hover {
+  cursor: pointer;
+  width: 8.4rem;
+  height: 4.2rem;
+}
+
+.tableRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1%;
+  padding: 0.3%;
+  border-radius: 0.2rem;
+}
+
+.desc {
+  width: 48%;
+  font-weight: bold;
+}
+
+.title {
+  width: 12%;
+  font-weight: bold;
+}
+
+.url {
+  width: 28%;
+  font-weight: bold;
+}
+
+.amend {
+  width: 8%;
+  margin: 1%;
+  text-align: center;
+  padding: 0.3%;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: rgb(54, 54, 54);
+  font-weight: bold;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 200;
+  background-color: rgb(102, 96, 96);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .desc {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .title {
+    width: 24%;
+  }
+
+  .url {
+    width: 54%;
+  }
+
+  .amend {
+    width: 19%;
+  }
+
+  .tableRow {
+    font-size: 0.8rem;
+  }
+
+  input {
+    max-width: 11%;
   }
 }
