@@ -96,4 +96,4 @@ app.put("/ammendData", (req, resp) => {
 
 // example of put request 'http://localhost:3000/?id=1&title=MyNextProject&descr=react and node full stack&url=www.testing123'
 
-app.listen(3001);
+app.listen(process.env.PORT || 3001);
