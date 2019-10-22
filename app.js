@@ -50,7 +50,6 @@ app.delete("/", (req, resp) => {
   // set the ID that is received to be deleted
 
   let id = req.body.id;
-  console.log(id);
 
   //read the file and add the contents into an array
 

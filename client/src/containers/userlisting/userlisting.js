@@ -3,6 +3,7 @@ import React from "react";
 const userList = props => {
   let userData;
 
+  // if no data is available, load the below tablerow.
   if (props.userListing === null) {
     userData = (
       <div className="tableRow">
@@ -12,6 +13,8 @@ const userList = props => {
         <div className="amend">Amend</div>
       </div>
     );
+
+    // if data is available the below table rows are loaded.
   } else {
     userData = props.userListing.map((key, i) => {
       return (
